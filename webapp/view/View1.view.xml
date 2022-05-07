@@ -1,0 +1,19 @@
+<mvc:View controllerName="smartformprint.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <HBox id="idH">
+                        <Label id="idLabel" text="SalesOrder ID" class="sapUiTinyMarginTop"/>
+                        <Input id="idInp1"/>
+                        <Button id="idBtn" text="Submit" type="Emphasized" press="onSubmit"/>
+                    </HBox>
+                    <PDFViewer id="idPDF"></PDFViewer>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>
